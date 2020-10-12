@@ -4,4 +4,4 @@
 #
 
 25544 "" image=iss.png transparent={0,0,0} 
-25544 "" image=none altcirc=0 altcirc=45 trail={orbit,-10,0,2} color=yellow
+25544 "" image=none altcirc=0 altcirc=45 trail={orbit,200,0,2} color=yellow
