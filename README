@@ -1,0 +1,6 @@
+Run the script periodically using crontab. Example:
+
+```
+# m h  dom mon dow   command
+  * *  *   *   *     /usr/local/src/worldmapbackground/worldmapbackground.sh &>/dev/null
+```
