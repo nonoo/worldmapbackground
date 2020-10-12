@@ -29,4 +29,4 @@ export XDG_RUNTIME_DIR=/run/user/1000
 
 nice -n19 pcmanfm-qt -w $out --wallpaper-mode fit
 
-#rm -f $out
+rm -f $out
