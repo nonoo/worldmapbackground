@@ -17,8 +17,8 @@ scriptdir=${self%$scriptname}
 cd $scriptdir
 
 # Downloading TLE once per day.
-if [ ! -f iss.tle ] || [ `date -r iss.tle +%d` != `date +%d` ]; then
-	nice -n19 wget http://www.celestrak.com/NORAD/elements/stations.txt -O iss.tle
+if [ ! -f sats.tle ] || [ `date -r sats.tle +%d` != `date +%d` ]; then
+	nice -n19 wget http://www.celestrak.com/NORAD/elements/stations.txt -O sats.tle
 fi
 
 nice -n19 xplanet -body earth -projection rectangular -num_times 1 -geometry $res -verbosity 4 -quality 100 -config xplanet.cfg \
