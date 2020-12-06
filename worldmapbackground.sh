@@ -17,7 +17,7 @@ scriptdir=${self%$scriptname}
 cd $scriptdir
 
 # Downloading TLE once per day.
-if [ ! -f sats.tle ] || [ `date -r sats.tle +%d` != `date +%d` ]; then
+if [ ! -s sats.tle ] || [ `date -r sats.tle +%d` != `date +%d` ]; then
 	nice -n19 wget http://www.celestrak.com/NORAD/elements/stations.txt -O sats.tle
 fi
 
